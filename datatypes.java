@@ -10,7 +10,7 @@ var b = [{
     "class" : "CSE A"
 },
 {
-    "name" : "Dharanish",
+    "name" : "RANAJAY",
     "class" : "CSE A"
 }]
 b.forEach((person) => {
