@@ -1,157 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Operators in HTML & JavaScript</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        table {
-            width: 80%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-        table, th, td {
-            border: 1px solid #ddd;
-        }
-        th, td {
-            padding: 10px;
-            text-align: center;
-        }
-        th {
-            background-color: #f4f4f4;
-        }
-    </style>
-</head>
-<body>
-    <h1>Operators in HTML & JavaScript</h1>
+// JavaScript Code for Operators
 
-    <h2>1. Arithmetic Operators</h2>
-    <p>Arithmetic operators are used to perform mathematical calculations:</p>
-    <table>
-        <tr>
-            <th>Operator</th>
-            <th>Operation</th>
-            <th>Example</th>
-            <th>Result</th>
-        </tr>
-        <tr>
-            <td>+</td>
-            <td>Addition</td>
-            <td>5 + 3</td>
-            <td><span id="add"></span></td>
-        </tr>
-        <tr>
-            <td>-</td>
-            <td>Subtraction</td>
-            <td>5 - 3</td>
-            <td><span id="sub"></span></td>
-        </tr>
-        <tr>
-            <td>*</td>
-            <td>Multiplication</td>
-            <td>5 * 3</td>
-            <td><span id="mul"></span></td>
-        </tr>
-        <tr>
-            <td>/</td>
-            <td>Division</td>
-            <td>5 / 3</td>
-            <td><span id="div"></span></td>
-        </tr>
-        <tr>
-            <td>%</td>
-            <td>Modulus</td>
-            <td>5 % 3</td>
-            <td><span id="mod"></span></td>
-        </tr>
-    </table>
+// Arithmetic Operators
+console.log("Arithmetic Operators:");
+let a = 10, b = 3;
+console.log(`Addition (a + b): ${a + b}`);       // 13
+console.log(`Subtraction (a - b): ${a - b}`);   // 7
+console.log(`Multiplication (a * b): ${a * b}`); // 30
+console.log(`Division (a / b): ${(a / b).toFixed(2)}`); // 3.33
+console.log(`Modulus (a % b): ${a % b}`);       // 1
+console.log(`Exponentiation (a ** b): ${a ** b}`); // 1000
 
-    <h2>2. Relational Operators</h2>
-    <p>Relational operators compare values and return true or false:</p>
-    <table>
-        <tr>
-            <th>Operator</th>
-            <th>Operation</th>
-            <th>Example</th>
-            <th>Result</th>
-        </tr>
-        <tr>
-            <td>==</td>
-            <td>Equal to</td>
-            <td>5 == 3</td>
-            <td><span id="equal"></span></td>
-        </tr>
-        <tr>
-            <td>!=</td>
-            <td>Not equal to</td>
-            <td>5 != 3</td>
-            <td><span id="notEqual"></span></td>
-        </tr>
-        <tr>
-            <td>&gt;</td>
-            <td>Greater than</td>
-            <td>5 > 3</td>
-            <td><span id="greater"></span></td>
-        </tr>
-        <tr>
-            <td>&lt;</td>
-            <td>Less than</td>
-            <td>5 < 3</td>
-            <td><span id="less"></span></td>
-        </tr>
-    </table>
+// Relational (Comparison) Operators
+console.log("\nRelational Operators:");
+console.log(`Equal to (a == b): ${a == b}`);        // false
+console.log(`Not equal to (a != b): ${a != b}`);    // true
+console.log(`Greater than (a > b): ${a > b}`);      // true
+console.log(`Less than (a < b): ${a < b}`);         // false
+console.log(`Greater than or equal to (a >= b): ${a >= b}`); // true
+console.log(`Less than or equal to (a <= b): ${a <= b}`); // false
 
-    <h2>3. Logical Operators</h2>
-    <p>Logical operators are used to combine conditions:</p>
-    <table>
-        <tr>
-            <th>Operator</th>
-            <th>Operation</th>
-            <th>Example</th>
-            <th>Result</th>
-        </tr>
-        <tr>
-            <td>&&</td>
-            <td>Logical AND</td>
-            <td>(5 > 3) && (3 > 2)</td>
-            <td><span id="and"></span></td>
-        </tr>
-        <tr>
-            <td>||</td>
-            <td>Logical OR</td>
-            <td>(5 > 3) || (3 < 2)</td>
-            <td><span id="or"></span></td>
-        </tr>
-        <tr>
-            <td>!</td>
-            <td>Logical NOT</td>
-            <td>!(5 > 3)</td>
-            <td><span id="not"></span></td>
-        </tr>
-    </table>
+// Logical Operators
+console.log("\nLogical Operators:");
+let x = true, y = false;
+console.log(`Logical AND (x && y): ${x && y}`);  // false
+console.log(`Logical OR (x || y): ${x || y}`);   // true
+console.log(`Logical NOT (!x): ${!x}`);          // false
 
-    <script>
-        // Arithmetic
-        document.getElementById('add').textContent = 5 + 3;
-        document.getElementById('sub').textContent = 5 - 3;
-        document.getElementById('mul').textContent = 5 * 3;
-        document.getElementById('div').textContent = (5 / 3).toFixed(2);
-        document.getElementById('mod').textContent = 5 % 3;
+// Assignment Operators
+console.log("\nAssignment Operators:");
+let c = 5;
+console.log(`Initial value (c): ${c}`);
+c += 3;  // Equivalent to c = c + 3
+console.log(`After addition (c += 3): ${c}`);
+c -= 2;  // Equivalent to c = c - 2
+console.log(`After subtraction (c -= 2): ${c}`);
+c *= 2;  // Equivalent to c = c * 2
+console.log(`After multiplication (c *= 2): ${c}`);
+c /= 3;  // Equivalent to c = c / 3
+console.log(`After division (c /= 3): ${c.toFixed(2)}`);
+c %= 2;  // Equivalent to c = c % 2
+console.log(`After modulus (c %= 2): ${c}`);
 
-        // Relational
-        document.getElementById('equal').textContent = 5 == 3;
-        document.getElementById('notEqual').textContent = 5 != 3;
-        document.getElementById('greater').textContent = 5 > 3;
-        document.getElementById('less').textContent = 5 < 3;
+// Bitwise Operators
+console.log("\nBitwise Operators:");
+let m = 5, n = 3;  // 5 = 0101, 3 = 0011 in binary
+console.log(`Bitwise AND (m & n): ${m & n}`);    // 1 (0001)
+console.log(`Bitwise OR (m | n): ${m | n}`);     // 7 (0111)
+console.log(`Bitwise XOR (m ^ n): ${m ^ n}`);    // 6 (0110)
+console.log(`Bitwise NOT (~m): ${~m}`);          // -6
+console.log(`Left shift (m << 1): ${m << 1}`);   // 10 (1010)
+console.log(`Right shift (m >> 1): ${m >> 1}`);  // 2 (0010)
 
-        // Logical
-        document.getElementById('and').textContent = (5 > 3) && (3 > 2);
-        document.getElementById('or').textContent = (5 > 3) || (3 < 2);
-        document.getElementById('not').textContent = !(5 > 3);
-    </script>
-</body>
-</html>
+// Conditional (Ternary) Operator
+console.log("\nConditional (Ternary) Operator:");
+let age = 20;
+let isAdult = (age >= 18) ? "Yes" : "No";
+console.log(`Is the person an adult? ${isAdult}`);
+
+// Type Operators
+console.log("\nType Operators:");
+console.log(`Type of a: ${typeof a}`);          // number
+console.log(`Type of "Hello": ${typeof "Hello"}`); // string
+console.log(`Instance of Array: ${[] instanceof Array}`); // true
