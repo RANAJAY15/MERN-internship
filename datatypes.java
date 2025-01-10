@@ -2,11 +2,11 @@ var a = [1,"two","three"]
 console.log(a)
 
 var b = [{
-    "name" : "jp",
+    "name" : "nithi",
     "class" : "CSE A"
 },
 {
-    "name" : "aji",
+    "name" : "aks",
     "class" : "CSE A"
 },
 {
