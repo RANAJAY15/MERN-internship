@@ -6,3 +6,10 @@ return"This is async/await example"
 }
 console.log(asAw())
 
+async function likecode(){
+    return new Promise(likingpost)=>{
+        setTimeout(()=>{
+            likingpost("Like the post created");
+        },2000);
+    }
+}
