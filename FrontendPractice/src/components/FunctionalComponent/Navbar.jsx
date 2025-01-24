@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import '../../css/Navbar.css'
+import './Css/Navbar.css'
 import { Link } from 'react-router-dom'
 const Navbar = () => {
     var [dropdown, showDropdown] = useState(false)
@@ -24,6 +24,10 @@ const Navbar = () => {
                             <ul>
                                 <li><Link to="/usestate" >UseState</Link></li>
                                 <li><Link to="/useeffect">UseEffect</Link></li>
+                                <li><Link to="/useref">UseRef</Link></li>
+                                <li><Link to="/usermemo">UseMemo</Link></li>
+                                <li><Link to="/callback">UseCallback</Link></li>
+                                <li><Link to="/List">List</Link></li>
                             </ul>)}
                     </div>
                 </ol>
