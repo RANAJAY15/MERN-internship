@@ -4,7 +4,7 @@ ol{
     list-style-type: none;
     margin: 0;
     padding: 10px;
-    background-color: rgb(51, 51, 51);
+    background-color: rgb(236, 240, 102);
     color: aqua;
 }
 
@@ -16,6 +16,6 @@ ol{
 
 .link:hover{
     color: rgb(28, 5, 207);
-    background-color: rgb(20, 186, 186);
+    background-color: rgb(234, 241, 241);
     border-radius: 10px;
 }

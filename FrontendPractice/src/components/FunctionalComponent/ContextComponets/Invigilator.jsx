@@ -8,4 +8,4 @@ const Invigilator = () =>{
         </div>
     )
 }
-export default Invigilator;
+export default Invigilator; 
