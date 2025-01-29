@@ -1,6 +1,3 @@
-import { useState } from "react"
-import useLocalStorage from "./SampleCustomHook"
-
 const UseLocalStorage=()=>{
     var [text,setText]=useLocalStorage("customerID","")
     return(
@@ -12,4 +9,4 @@ const UseLocalStorage=()=>{
     )
 }
 
-export default UseLocalStorage
+export default UseLocalStorage;
